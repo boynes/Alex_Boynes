@@ -1,0 +1,8 @@
+RewriteEngine on
+
+
+# Error documents redirect
+ErrorDocument 404 /404.php
+
+# Redirect /anything/ to /anything.php
+RewriteRule ^([A-Za-z0-9-\+\_]+)$ /$1.php
